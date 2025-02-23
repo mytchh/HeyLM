@@ -6,7 +6,8 @@ import android.service.voice.VoiceInteractionSession
 
 class DigitalAssistantService : VoiceInteractionService() {
 
-    override fun onNewSession(args: Bundle?): VoiceInteractionSession {
+    @Override
+    fun onNewSession(args: Bundle?): VoiceInteractionSession {
         // Return an instance of your custom session
         return DigitalAssistantSession(this)
     }
