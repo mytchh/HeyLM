@@ -1,9 +1,7 @@
 package com.example.heylmv1
 
 import android.Manifest
-import android.content.Intent
 import android.content.pm.PackageManager
-import android.provider.Settings
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
@@ -34,9 +32,6 @@ class MainActivity : AppCompatActivity() {
                 REQUEST_AUDIO_PERMISSION
             )
         }
-        val intent = Intent(Settings.ACTION_MANAGE_DEFAULT_APPS_SETTINGS)
-        startActivity(intent)
-
         // menu selector
         navView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
